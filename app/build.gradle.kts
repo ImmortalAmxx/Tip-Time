@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.tiptime"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.tiptime"
@@ -13,6 +13,7 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
+        vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
