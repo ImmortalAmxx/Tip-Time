@@ -9,13 +9,17 @@ android {
 
     defaultConfig {
         applicationId = "com.example.tiptime"
-        minSdk = 33
+        minSdk = 24
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-        vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -45,4 +49,5 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("com.google.android.material:material:<version>")
 }
